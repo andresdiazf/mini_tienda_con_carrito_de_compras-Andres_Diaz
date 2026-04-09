@@ -1,0 +1,13 @@
+img {
+  border-radius: 8px;        /* esquinas redondeadas */
+}
+#badge {
+  /* No necesitas nada extra, ms-auto en el botón padre lo posiciona */
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+#carrito {
+  margin-right: 40px;   /* ajusta este valor */
+}
