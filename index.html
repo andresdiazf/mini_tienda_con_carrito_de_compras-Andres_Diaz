@@ -1,33 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dogs</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="description" content="Encuentra los mejores artículos, consejos y guías de cuidado para tus perros y gatos en nuestro blog especializado.", initial-scale=1.0">
+    <title>Como Perros & Gatos | Artículos para Perros y Gatos</title>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-dark"
-        <div class="container">
-            <!-- Logo imagen -->
-            <a class="navbar-brand" href="#">
-            <img 
-                src="assets/logo/logo_MyDogs_Gemini.png" 
-                alt="Logo de la tienda" 
-                width="200" 
-                height="50">
-        </div>
-            <a href="carrito" class="bi bi-cart4">  <i class="7"></i> 
-            <span id="badge" class="badge bg-warning">0</span>
-        </a>
-        
-        
-    </nav>
-    
+    <!-- Bootstrap -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-<body>
-    
-<script src="app.js"></script>
-</body>
+
+    <body>
+        
+        <div class="text-center py-2 small fw-semibold" 
+        style="background-color: #923c80; color: #fff; letter-spacing: 0.em;">
+            <i class="fa-solid fa-paw me-2"></i>
+            ¡Bienvenido a Como Perros &amp; Gatos! Tu mini tienda de artículos para todo lo relacionado con perros y gatos.
+            <i class="fa-solid fa-paw ms-2"></i>
+        </div>
+            
+        <nav class="navbar navbar-dark px-4" style="background-color: #bec557;">
+            <img src="assets/images/logo_MyDogs_Gemini.svg" alt="">
+            <span class="navbar-brand fw-bold fs-5">
+            <i class="fa-solid  me-2"></i>Como Perros &amp; Gatos
+            </span>
+            <span class="d-flex align-items-center gap-2">
+                <i class="bi bi-cart2" style="font-size: 3.0rem;"></i>
+                <span id="badge" class="badge bg-danger">0</span>
+            </span>
+        </nav>
+
+<!-- ===== CONTENIDO PRINCIPAL ===== -->
+        <div class="container-fluid mt-4">
+            <div class="row">
+
+                <!-- COLUMNA IZQUIERDA: Productos -->
+                <div class="col-md-8">
+                <h4 class="mb-3">Catálogo</h4>
+                <div class="row g-3">
+
+                    <!-- PRODUCTO 1 -->
+                    <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                        <img src="/assets/images/producto1.png" alt="Comedero Automático para Perro" class="img-fluid mb-2" style="max-height: 150px;">
+                        <h5 class="card-title">Comedero Automático para Perro</h5>
+                        <p class="card-text text-muted">$ 150.000</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                            <button class="btn-restar"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" class="form-control form-control-sm input-cantidad" value="1" min="1" max="99" readonly>
+                            <button class="btn-sumar"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-success w-100 btn-agregar"
+                            data-nombre="Comedero Automático para Perro"
+                            data-precio="150000">Agregar
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- PRODUCTO 2 -->
+                    <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                        <img src="/assets/images/producto2.png" alt="Rascador Multinivel para Gato" class="img-fluid mb-2" style="max-height: 150px;">
+                        <h5 class="card-title">Rascador Multinivel para Gato</h5>
+                        <p class="card-text text-muted">$ 200.000</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                            <button class="btn-restar"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" class="form-control form-control-sm input-cantidad" value="1" min="1" max="99" readonly>
+                            <button class="btn-sumar"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-success w-100 btn-agregar"
+                            data-nombre="Rascador Multinivel para Gato"
+                            data-precio="200000">Agregar
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- PRODUCTO 3 -->
+                    <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                        <img src="/assets/images/producto3.png" alt="Cama Nido Relajante para Gato" class="img-fluid mb-2" style="max-height: 150px;">
+                        <h5 class="card-title">Cama Nido Relajante para Gato (Gris)</h5>
+                        <p class="card-text text-muted">$ 180.000</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                            <button class="btn-restar"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" class="form-control form-control-sm input-cantidad" value="1" min="1" max="99" readonly>
+                            <button class="btn-sumar"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-success w-100 btn-agregar"
+                            data-nombre="Cama Nido Relajante para Gato"
+                            data-precio="180000">Agregar
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- PRODUCTO 4 -->
+                    <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                        <img src="/assets/images/producto4.png" alt="Arnés Reflectante Azul para Perro" class="img-fluid mb-2" style="max-height: 150px;">
+                        <h5 class="card-title">Arnés Reflectante Azul para Perro</h5>
+                        <p class="card-text text-muted">$ 95.000</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+                            <button class="btn-restar"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" class="form-control form-control-sm input-cantidad" value="1" min="1" max="99" readonly>
+                            <button class="btn-sumar"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-success w-100 btn-agregar"
+                            data-nombre="Arnés Reflectante Azul para Perro"
+                            data-precio="95000">Agregar
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                </div> <!-- cierra row g-3 de productos -->
+                </div> <!-- cierra col-md-8 -->
+
+                <!-- Este div está al mismo nivel que col-md-8 -->
+                <section class="col-md-4">
+                <div class="card shadow-sm sticky-top" style="top: 16px;">
+                    <div class="card-header text-white text-center" style="background-color: #2D2640;">
+                    <i class="bi bi-cart2 me-2"></i>Tu Carrito
+                    </div>
+                    <div class="card-body">
+                    <ul id="lista-carrito" class="list-group mb-3">
+                        <li id="msg-vacio" class="list-group-item text-muted text-center">
+                        Tu carrito está vacío
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between fw-bold mb-3">
+                        <span>Total:</span>
+                        <span id="total">$0</span>
+                    </div>
+                    <button id="btn-vaciar" class="btn btn-outline-secondary w-100">
+                        <i class="bi bi-trash me-1"></i> Vaciar carrito
+                    </button>
+                    </div>
+                </div>
+                </section><!--cierra col-md-4 carrito -->  
+            </div>
+            </div>
+        <script src="app.js"></script>
+    </body>
 </html>

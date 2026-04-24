@@ -1,13 +1,63 @@
-img {
-  border-radius: 8px;        /* esquinas redondeadas */
-}
-#badge {
-  /* No necesitas nada extra, ms-auto en el botón padre lo posiciona */
-  position: absolute;
-  top: -5px;
-  right: -10px;
+:root {
+  --color-primario: #e79720;
+  --color-acento:   #F97B5C;
+  --color-exito:    #3DAB8E;
+  --color-fondo:    #f0ece7;
+  --color-texto:    #2D2640;
 }
 
-#carrito {
-  margin-right: 40px;   /* ajusta este valor */
+.navbar {
+  background-color: var(--color-primario);
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+
+
+/* Elimina las flechitas nativas del input number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
+}
+
+/* Estilo del selector de cantidad */
+.input-cantidad {
+  width: 55px !important;
+  text-align: center;
+  font-weight: 600;
+  border: 1.5px solid #7C5CBF !important;
+  border-radius: 8px !important;
+  color: #2D2640;
+  pointer-events: none; /* Solo se cambia con los botones */
+}
+
+/* Botones + y - */
+.btn-restar,
+.btn-sumar {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  border: 1.5px solid #7C5CBF !important;
+  color: #7C5CBF !important;
+  background: white !important;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.btn-restar:hover,
+.btn-sumar:hover {
+  background: #7C5CBF !important;
+  color: white !important;
 }
